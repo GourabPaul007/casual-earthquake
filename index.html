@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Earthquake Data</title>
+</head>
+
+<body>
+    <div class="container padding-div"></div>
+    <div class="container">
+        <form action="#" id="form">
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" id="start" placeholder="Start date(year-mm-dd)"
+                        aria-label="Start date">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" id="end" placeholder="End date(year-mm-dd)"
+                        aria-label="End date">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">Fetch</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="container">
+        <ul class="list-group" id="earthquake-list">
+            <li class="list-group-item">Earthquakes</li>
+        </ul>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
